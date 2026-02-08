@@ -12,7 +12,7 @@ CREATE TABLE "customer" (
 CREATE TABLE "weekly_goal" (
     "id" INTEGER PRIMARY KEY AUTOINCREMENT,
     "customer_id" INTEGER,
-    "usage" INTEGER NOT NULL,
+    "weekly_usage" INTEGER NOT NULL,
     "miles" INTEGER NOT NULL,
     FOREIGN KEY("customer_id") REFERENCES "customer"("id")
 );
